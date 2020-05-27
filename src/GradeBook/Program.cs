@@ -21,7 +21,11 @@ namespace GradeBook
             book.AddGrade(3.2);
             book.AddGrade(4.2);
 
-            book.showStatistics();
+            var stats = book.GetStatistics();
+            
+            Console.WriteLine(stats.Low);
+            Console.WriteLine(stats.High);
+            Console.WriteLine(stats.Average);
 
             
 
